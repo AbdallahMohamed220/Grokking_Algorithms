@@ -1,5 +1,5 @@
 void main() {
-  print(binarySearch([1, 2, 5, 6, 7], 66));
+  binarySearch([1, 2, 5, 6, 7], 6);
 }
 
 binarySearch(List list, var item) {
@@ -10,6 +10,8 @@ binarySearch(List list, var item) {
     var mid = low + high;
     var guess = list[mid];
 
+    print('$mid');
+    print('$guess');
     if (guess == item) {
       return mid;
     } else if (guess > item) {
