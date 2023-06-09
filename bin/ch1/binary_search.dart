@@ -1,14 +1,14 @@
 void main() {
-  print(binarySearch([1, 2, 5, 6, 7], 6));
+  print(binarySearch([1, 2, 5, 6, 7], 66));
 }
 
-binarySearch(List myList, var item) {
+binarySearch(List list, var item) {
   var low = 0;
-  var high = myList.length - 1;
+  var high = list.length - 1;
 
   while (low <= high) {
     var mid = low + high;
-    var guess = myList[mid];
+    var guess = list[mid];
 
     if (guess == item) {
       return mid;
