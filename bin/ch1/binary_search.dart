@@ -1,5 +1,5 @@
 void main() {
-  print(binarySearch([1, 2, 5, 6, 7], 66));
+  print(binarySearch([1, 2, 5, 6, 7], 6));
 }
 
 binarySearch(List myList, var item) {
